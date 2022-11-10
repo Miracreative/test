@@ -1,0 +1,56 @@
+.hat {
+    position: relative;
+    .logo {
+        width: 35px;
+        height: 35px;
+        position: absolute;
+        left: -5px;
+        top: -5px;
+        cursor: pointer;
+    }
+    &__list {
+        display: flex;
+        list-style: none;
+        padding: 0;
+        font-weight: 400;
+        font-size: 0.75rem;
+        margin-top: 15px;
+    }
+    &__item {
+        margin:  0 1.25rem;
+        margin-bottom: 0.625rem;
+        cursor: pointer;
+        a {
+            text-decoration: none;
+            color: #fff;
+        }
+        &_black {
+            a {
+                color: #000;
+            }
+        }
+    }
+}
+
+@media (max-width: 36em) {
+    .hat {
+        .logo {
+            left: 7px;
+            top: -3px;
+        }
+        &__list {
+            flex-direction: column;
+            margin-top: 20px;
+            align-items: center;
+            &_none {
+                display: none;
+                &_visible {
+                    display: block;
+                }
+            }
+        }
+        &__item {
+            margin-right: 0;
+        }  
+    }
+}

@@ -1,0 +1,39 @@
+.picture {
+    padding-top: 4.375rem;
+    &__wrapper {
+        display: flex;
+        justify-content: space-around;
+        gap: 3.5rem;
+    }
+    &__img {
+        width: 392px;
+        height: auto;
+        display: block;
+    }
+    &__unvisible {
+        display: none;
+    }
+}
+
+@media (max-width: 48em) {
+    .picture {
+        padding-top: 2.25rem;
+        &__wrapper {
+            flex-direction: column;
+            gap: 0;
+            align-items: center;
+        }
+        &__img {
+            display: none;
+        }
+        &__unvisible {
+            width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+        &__descr {
+            width: 80%;
+        }
+    }
+}

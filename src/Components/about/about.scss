@@ -1,0 +1,13 @@
+.about {
+    padding: 2.8125rem 0 6.25rem;
+    height: auto;
+}
+.text {
+    padding-top: 1.25rem;
+}
+
+@media (max-width: 75em) {
+    .about {
+        padding: 1.8125rem 0 4.25rem;
+    }
+}

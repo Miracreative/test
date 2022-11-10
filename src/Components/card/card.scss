@@ -1,0 +1,44 @@
+.card {
+    padding: 20px;
+    background-color: rgba(255,255,255, .65);
+    width: 220px;
+    height: 240px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-self: center;
+    cursor: pointer;
+    box-shadow: 5px 5px 15px 0 rgba(0, 0, 0, .25);
+    &_big {
+        height: 260px;;
+    }
+    &:hover {
+        transform: scale(1.05);
+        filter: contrast(150%);
+    }
+    &_selected {
+        transform: translateY(-8px);
+    }
+    .price {
+        align-self: flex-end;
+        margin: 10px 0 0;
+        font-weight: 700;
+        font-size: 0.875rem;
+    }
+    &__img {
+        width: 150px;
+        height: auto;
+    }
+    .country {
+        display: none;
+        align-self: flex-end;
+        margin: 10px 0 0;
+        font-weight: 400;
+        font-size: 0.875rem;
+        &_veu {
+            display: block;
+        }
+    }
+}

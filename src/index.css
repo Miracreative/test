@@ -1,0 +1,19 @@
+* {
+    margin: 0;
+    font-family: 'Merienda', cursive;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 80%;
+	margin: 0 auto;
+}
+
+@media (max-width: 36em) {
+    .container {
+        max-width: 95%;
+    }
+}
